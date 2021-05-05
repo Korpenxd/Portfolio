@@ -187,15 +187,19 @@ aside#sidebar #contactForm input, aside#sidebar #contactForm textarea {
 
 #sidebar_about img {
   width: 18rem;
+  height: auto;
 }
 
 .alert {
+  margin: 0 auto;
 	text-align: center;
-	padding: 10px 30px;
-	background: rgba(8, 37, 116, 1.0);
-	color: #D3D3D3;
+	padding: 10px 5px;
+  background: rgb(134,33,16);
+  background: linear-gradient(90deg, rgba(134,33,16,1) 0%, rgba(0,243,255,1) 100%);
+	color: #fff;
 	margin-bottom: 10px;
 	display: none;
+  width: 90%;
 	-webkit-transition: 1s ease
 }
 
@@ -227,27 +231,7 @@ footer {
   border-top: #862110 3px solid;
 }
 
-/* Media Queries
-@media(max-width: 1199px) {
-  #newsletter h1,
-  #newsletter form {
-    float: none;
-    text-align: center;
-    max-width: 325px;
-    width: 100%;
-  }
-
-
-  #newsletter button, .quote button {
-    display: block;
-    width: 100%;
-  }
-  #newsletter input[type="email"], .quote input, .quote textarea{
-    width: 100%;
-    margin-bottom: 5px;
-  }
-}
-*/
+/* Media Queries */
 @media(max-width: 1205px) {
   header #branding,
   header nav,
@@ -271,18 +255,31 @@ footer {
     margin-top: 40px;
   }
 
+  #showcase .container {
+    overflow: hidden;
+  }
+
   aside#sidebar {
     display: block;
-    width: 97%;
+    width: auto;
     text-align: center;
     float: none;
     padding: .5rem;
+  }
+
+  .container {
     overflow: visible;
+  }
+
+
+  #sidebar_about img {
+    width: 100%;
   }
 
 #sidebar_about {
   margin: 0 auto;
   float: none;
+  max-width: 25rem;
 }
 
   #boxes .container {
