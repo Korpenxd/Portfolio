@@ -5,7 +5,6 @@ body, html {
   padding: 0;
   margin: 0;
   background-color: #212121;
-  min-width: 450px;
   color: #fff;
   scroll-behavior: smooth;
 }
@@ -46,9 +45,20 @@ ul {
 header {
   background: #35424a;
   color: #ffffff;
-  padding-top: 30px;
   min-height: 70px;
   border-bottom: #00f3ff 3px solid;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  max-width: 125px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
 }
 
 header a {
@@ -58,10 +68,15 @@ header a {
   font-size: 16px;
 }
 
+#branding a {
+  text-transform: none;
+  font-size: 2rem;
+}
+
 header li {
   float: left;
   display: inline;
-  padding: 0 20px;
+  padding: 30px 20px;
 }
 
 header #branding {
@@ -70,6 +85,7 @@ header #branding {
 
 header #branding h1 {
   margin: 0;
+  padding: 30px 10px 0 0;
 }
 
 header nav {
@@ -249,6 +265,15 @@ footer {
 
   header {
     padding-bottom: 20px;
+  }
+
+  header .container {
+    display: block;
+    justify-content: center;
+  }
+
+  header #logo {
+    display: none;
   }
 
   #showcase h1{
