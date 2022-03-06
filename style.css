@@ -56,6 +56,7 @@ header .container {
 
 header img {
   max-width: 125px;
+  max-height: 125px;
   width: 100%;
   height: auto;
   padding-bottom: 10px;
@@ -129,8 +130,8 @@ header a:hover{
   padding-bottom: 6.25rem;
 }
 
-/* Newsletter */
-#newsletter, #newsletter_a, #newsletter_s {
+/* b_bar */
+#b_bar, #b_bar_a, #b_bar_s {
   padding: 15px;
   color: #fff;
   background: #35424a;
@@ -138,16 +139,16 @@ header a:hover{
   border-bottom: #862110 3px solid;
 }
 
-#newsletter h1 {
+#b_bar h1 {
   float: left;
 }
 
-#newsletter form {
+#b_bar form {
   float: right;
   margin-top: 15px;
 }
 
-#newsletter input[type="email"]{
+#b_bar input[type="email"]{
   padding: 4px;
   height: 25px;
   width: 12rem;
@@ -175,8 +176,9 @@ header a:hover{
 }
 
 #boxes .box img {
-  width: 90px;
   margin: 0 auto;
+  height: auto;
+  max-width: 18.75rem;
 }
 
 /* Sidebar */
@@ -199,6 +201,7 @@ aside#sidebar_about {
 aside#sidebar #contactForm input, aside#sidebar #contactForm textarea {
   width: 90%;
   padding: 5px;
+  margin-bottom: 10px
 }
 
 #sidebar_about img {
@@ -207,7 +210,6 @@ aside#sidebar #contactForm input, aside#sidebar #contactForm textarea {
 }
 
 .alert {
-  margin: 0 auto;
 	text-align: center;
 	padding: 10px 5px;
   background: rgb(134,33,16);
@@ -252,8 +254,8 @@ footer {
   header #branding,
   header nav,
   header nav li,
-  #newsletter h1,
-  #newsletter form,
+  #b_bar h1,
+  #b_bar form,
   #boxes .box,
   article#main-col,
   aside#sidebar
@@ -318,7 +320,9 @@ footer {
     float: none;
   }
 
-
+.alert {
+  margin: 0 auto;0
+}
 
 
   }
@@ -333,7 +337,7 @@ footer {
       display: none;
     }
 
-    #newsletter .container {
+    #b_bar .container {
       width: 65%;
     }
 
