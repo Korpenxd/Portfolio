@@ -107,7 +107,7 @@ header a:hover{
 
 /* Showcase */
 #showcase {
-  background: url("images/bg_mb.jpg") no-repeat center center;
+  background: url("images/bg_mb.webp") no-repeat center center;
   background-position: 0% 45%;
   background-size: cover;
   text-align: center;
@@ -321,7 +321,7 @@ footer {
   }
 
 .alert {
-  margin: 0 auto;0
+  margin: 0 auto;
 }
 
 
